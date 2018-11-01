@@ -1,0 +1,133 @@
+{
+	"version": "4",
+	"systemId": "CloudSense",
+	"externalId": "2345-RT5F-YU67-9HJ8",
+	"requestedCompletionDate": "2017-10-24T06:08-11:00",
+	"orderSpecificationCode": "Generic_CPO",
+	"orderCharacteristic": [
+		{
+			"value":"2017-02-24T06:08-11:00",
+			"name":"Order_Submit_Date" 			
+		},
+		{
+			"value":"Solution Manager",
+			"name":"Project_Contact_Title"			
+		}
+	],
+	"relatedParty": [{
+	  "id": "CustomerCIDN",
+	  "name": "John Doe",
+	  "type": "Consumer",
+	  "role": "customer",
+	  "href": "http://serverlocation:port/partyManagement/customer/345221"
+	}],
+	"orderItem": [
+	{
+		"id": "OLI1-RT5F-YU67-9HJ8",
+		"version":"2",
+		"action": "Amend",
+		"requestedCompletionDate": "2017-10-23T06:32-11:00",
+		"billingAccount": [
+		{
+			"id": "Billing_Account_Number",
+			"accountType": "Billing Account"
+		}],
+		"appointment": {
+			"id": "eWOM_Appointment_Id",
+			"category": "ADSL/Telstra",
+			"startDate": "2017-04-19T16:42-04:00",
+			"endDate": "2017-06-19T00:00-04:00"        
+		},
+		"product": {
+			"id": "DEV1-RT5F-YU67-9HJ1",
+			"action": "add",
+			"productSpecification": {
+			  "code": "Device_SIGMA_Product_Spec_Id"
+			},
+			"productCharacteristic": [
+				{
+				  "value":"Switch",
+				  "name":"Product_Group_Name"                  
+				},
+				{
+				  "value": "Add",
+				  "name": "Scenario_Type"
+				}			
+			],
+			"place": [
+			{
+				"role": "Installation",
+				"address": {
+					"id": "ADBoR_Id1",
+					"type": "Postal",
+					"street1": "Brevoort Place",
+					"city": "Ellerslie",
+					"stateOrProvince": "Victoria",
+					"postCode": "3000",
+					"country": "Australia",
+					"buildingName": "Ovolo",
+					"streetType": "Lane",
+					"streetName": "Eagle Street",
+					"streetNr": "225",
+					"streetSuffix": "St",
+					"locality": "Walker",
+					"geocode": {
+						"latitude": "-88.506381",
+						"longitude": "-50.25214"
+					}
+				},
+				"contact": [
+				{
+					"id": "Salesforce_Contact_Id",
+					"gender": "male",
+					"type":"Site Contact",
+					"givenName":"John",
+					"familyName":"Doe",
+					"title":"Mr.",
+					"contactMedium": [
+						{
+							"type":"Email",
+							"medium":{
+								"emailAddress":"john@domain.com"
+							}
+						},
+						{
+							"type":"Telephone",
+							"medium":{
+								"number":"+436641234567 "
+							}
+						},
+						{
+							"type":"Mobile",
+							"medium":{
+								"number":"+436641234567 "
+							}
+						}
+					]										
+				}]
+			}],			
+			"productRelationship": [
+				{
+					"type": "contains",
+					"product": {
+						"id": "MGM1-RT5F-YU67-9HJ2",
+						"action": "add",
+						"productSpecification": {
+						  "code": "Managment_SIGMA_Product_Spec_Id"
+						},
+						"productCharacteristic": [
+							{
+							  "value":"Switch",
+							  "name":"Product_Group_Name"
+							},
+							{
+							  "value": "Add",
+							  "name": "Scenario_Type"
+							}			
+						]
+					}
+				}
+			]
+		}
+	}]
+}
